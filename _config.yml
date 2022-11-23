@@ -1,8 +1,8 @@
-title: "TALLEN Information Observatory"
+title: "TAL-N Information Observatory"
 email: 
 timezone: UTC
 baseurl: ""
-url: https://tallen.io
+url: https://tal-n.io
 permalink: "/:title/"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
