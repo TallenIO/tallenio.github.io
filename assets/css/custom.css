@@ -4,3 +4,8 @@ Just customize your theme here.
 ================================================== */
 
 body {}
+
+.logo {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 24px;
+}
