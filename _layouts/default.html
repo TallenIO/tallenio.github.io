@@ -9,6 +9,10 @@
 
 {% seo %}
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+    
 <link href="{{ site.baseurl }}/assets/css/theme.css" rel="stylesheet">
 
 <!-- custom CSS - Remove this if you don't use it or choose to customize the stylesheet with sass-->
@@ -39,11 +43,12 @@ gtag('config', '{{site.ganalytics}}');
         <div class="container">
 
           <a class="navbar-brand text-dark font-weight-bold big d-flex align-items-center" href="{{site.baseurl}}/">
-          <{% if site.logo %}
+          {% if site.logo %}
           <img class="mr-2" src="{{site.baseurl}}/{{site.logo}}" alt="logo"> 
           {% else %}
           <span class="d-none d-md-inline-block">{{ site.title }}</span>
-          {% endif %}>
+          {% endif %}
+          <font class="logo">TAL-N</font>
           <!--svg version="1.1"
             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
             x="0px" y="0px" width="33px" height="49px" viewBox="0 15 33 49" enable-background="new 0 0 33 49"
