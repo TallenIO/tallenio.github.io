@@ -4,7 +4,7 @@ timezone: UTC
 baseurl: ""
 url: https://tal-n.io
 permalink: "/:title/"
-logo: 'assets/images/logo.png'
+logo: 'assets/images/pink_swirl.png'
 favicon: 'assets/images/favicon.ico'
 author: Trey
 paginate: 30
