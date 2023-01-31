@@ -8,5 +8,34 @@ body {}
 .logo {
   font-family: 'Rajdhani', sans-serif;
   font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.logo > small {
+  font-size: 13px;
   font-weight: 600;
+  display: block;
+}
+
+.nav-link {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  line-height: 1;
+  border-bottom: 3px solid #fff;
+}
+
+.nav-link:hover {
+  border-bottom: 3px solid #FF325D;
+  transition: all .3s;
+}
+
+.navbar-collapse.show {
+  padding-top: 1.5rem;
+  transition: all .3s;
+}
+
+.navbar-collapse:not(.show) {
+  padding-top: 0;
+  transition: all .3s;
 }
