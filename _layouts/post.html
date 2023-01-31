@@ -23,10 +23,9 @@ post_class: post-template
                 <!-- Post Categories -->
                 <div class="after-post-tags">
                     <ul class="tags">
-                        {% assign sortedCategories = page.categories | sort %}
-                        {% for category in sortedCategories %}
+                        {% for category in page.categories %}
                         <li>
-                         <a href="{{ site.baseurl }}/categories#{{ category | slugify }}">{{ category }}</a>
+                         <a href="{{ site.baseurl }}/categories#{{ category }}">{{ category }}</a>
                         </li>
                         {% endfor %}
                     </ul>
@@ -34,29 +33,27 @@ post_class: post-template
                 <!-- End Categories -->
                 
                 <!-- Post Title -->
-				<h1 class="posttitle">{{ page.title }}</h1> 
+				<h1 class="posttitle">
+                    {{ page.title }}
+                    <small>
+                        By {% if post.author %}{{ author.display_name }}{% else %}{{ site.author }}{% endif %} on
+
+                        <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
+                        {% if page.last_modified_at %}
+                        (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
+                        {% endif %}
+                        </small>                        
+                    </small>
+                </h1>
+                
                 
 			</div>
-
-			
 
 			<!-- Post Content -->
 			<div class="article-post serif-font">
 				{{content}}
                 <div class="clearfix"></div>
 			</div>
-
-            <!-- Post Date -->
-            <p>
-            <small>
-                <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
-                {% if page.last_modified_at %}
-                (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
-                {% endif %}
-                </small>
-            </p>
-            
-			
             
             <!-- Prev/Next -->
             <div class="row PageNavigation mt-4 prevnextlinks d-flex justify-content-between">
@@ -89,12 +86,13 @@ post_class: post-template
             
             
             <!-- Begin Comments
-            ================================================== -->
+            ==================================================
             <section>
             <div id="comments">                          
                 {% include disqus.html %} 
             </div>
             </section>
+            -->
             <!--End Comments
             ================================================== -->
             
