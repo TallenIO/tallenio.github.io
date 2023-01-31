@@ -6,7 +6,7 @@ url: https://tal-n.io
 permalink: "/:title/"
 logo: 'assets/images/swirl_pink.svg'
 favicon: 'assets/images/favicon.ico'
-author: Trey
+author: Trey Allen
 paginate: 30
 disqus: 'demowebsite'
 locale: en_us
@@ -26,12 +26,12 @@ ganalytics: UA-113961478-1
 # Authors
 authors:
   trey:
-    name: Trey
+    name: trey.allen
     display_name: Trey Allen
-    avatar: 'assets/images/john.png'
+    avatar:
     email: 
-    web: https://www.wowthemes.net/category/jekyll-themes/
-    twitter: https://twitter.com/wowthemesnet
+    web: 
+    twitter: https://twitter.com/treyhyphen
     description: "This is the author box. Write a short description of the author here. You are currently previewing Affiliates theme demo, a Jekyll template compatible with Github pages."
 
 # Social
