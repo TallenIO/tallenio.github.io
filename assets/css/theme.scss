@@ -10,6 +10,7 @@ $blue:    #3d61fd !default;
 
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
 /* add additional CSS rules below */
 html {
@@ -94,7 +95,7 @@ small, .small {
    
 }
 .start-header.scroll-on {	
-	padding: 5px 0;
+	padding: 0px 0;
 	-webkit-transition : all 0.3s ease-out;
 	transition : all 0.3s ease-out;
     box-shadow: 0px 10px 40px 0px rgba(0,0,0,0.05);
